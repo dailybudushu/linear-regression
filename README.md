@@ -86,13 +86,13 @@
 #### 不同w初始值下的梯度下降图和rmse
 
 开始时我初始化w是利用np.random.rand(11, 1),这样造成的梯度下降图为
-![image1](梯度下降1.png)
+![image1](https://raw.githubusercontent.com/dailybudushu/img/master/%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D1.png?token=ArRqPJynm1_T46HaXj-pdHTvbC6PhsXjks5cQsA4wA%3D%3D)
 
 看起来十分满意，但是实际上最终的rmse较大,为3左右
 
 后来将np.random.rand(11, 1)改为np.random.rand(11, 1)*0.1，并加入正则惩罚项图片则变为：
 
-![image2](梯度下降2.png)
+![image2](https://raw.githubusercontent.com/dailybudushu/img/master/%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D2.png?token=ArRqPGu9ezM9coS4jxLjszGPxE1Opjc-ks5cQsBLwA%3D%3D)
 
 看起来效果不好但是实际上，修改后的rmse为1左右，变为了原来的1/3
 
